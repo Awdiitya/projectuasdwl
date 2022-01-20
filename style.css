@@ -4,6 +4,7 @@
 }
 
 /* preloader */
+
 .sectionload{
     position: absolute;
     top: 0;
@@ -12,7 +13,7 @@
     height: 100%;
     background: transparent;
     pointer-events: none;
-    animation: fadeout .5s linear forwards;
+    animation: fadeout .5s linear forwards; /*agar layar nya menghilang dan tampil landing page*/
     animation-delay: 2s;
     z-index: 999;
     align-items: center;
@@ -42,13 +43,16 @@
     font-size: 1px;
     color: transparent;
 }
+
 @keyframes fadeout{
     0%{opacity: 1;}
     100%{opacity: 0;}
 }
+
+/* agar logo nya berputar */
 @keyframes putar{
     from{transform: rotate(0deg);}
-    to{transform: rotateY(180deg);}
+    to{transform: rotateY(270deg);}
 }
 .tampilan{
     position: absolute;
