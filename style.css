@@ -1,0 +1,1200 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* preloader */
+.sectionload{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    pointer-events: none;
+    animation: fadeout .5s linear forwards;
+    animation-delay: 2s;
+    z-index: 999;
+    align-items: center;
+}
+.loader{
+    background: white;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+.loader img{
+    display: block;
+    margin: auto;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    z-index: 999;
+    margin: auto;
+    justify-content: center;
+    animation: putar 5s linear infinite;
+}
+.count{
+    color: whitesmoke;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 1px;
+    color: transparent;
+}
+@keyframes fadeout{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@keyframes putar{
+    from{transform: rotate(0deg);}
+    to{transform: rotateY(180deg);}
+}
+.tampilan{
+    position: absolute;
+    width: 100%;
+}
+/* akhir preloader */
+
+.tombolberanda,.tombolkoni,.tombolanggota,.tombolberita,.tombolevent,.tombolgallery,.tombolcabangolahraga,
+.tombolkegiatan,.tombolpon,.tombolporprovsu{
+    color: black;
+}
+/* ========================== */
+/* Tombol Back To Top */
+
+.backTop {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: inline-block;  
+    padding-right: 1em;         /*agar ga mepet ke jscrollpane*/
+    padding-bottom: 3em;              
+    background: transparent;
+    border: 0px solid #000;
+}
+.backTop:hover {
+    cursor: pointer;
+}
+
+/* akhir tombol Back to Top */
+/* ------------------------- */
+/* ///////////////////////// */
+
+
+/*-------VERSI MOBILE------- */
+@media (max-width: 575.98px) {
+
+    .tombolberanda,.tombolkoni,
+    .tombolanggota,.tombolberita,.tombolevent,
+    .tombolgallery,.tombolcabangolahraga,
+    .tombolkegiatan,.tombolpon,.tombolporprovsu{
+        border-color: transparent;
+    }
+
+/* ====================*/
+/* Tombol Back To Top */
+.backTop {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: inline-block;  
+    padding-right: 1em;         /*agar ga mepet ke jscrollpane*/
+    padding-bottom: 3em;              
+    background: transparent;
+    border: 0px solid #000;
+}
+.backTop:hover {
+    cursor: pointer;
+}
+/* akhir tombol Back to Top */
+
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        background-color: rgb(209, 204, 209);
+    }
+    .carousel-inner{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    /* info panel */
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .info-panel {
+        background-color: #CD2122;
+        margin-top: -3px;
+        padding-top: 2em;
+        padding-bottom: 30px;
+        display: block;
+        z-index: 1;
+        position: relative;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #segitigaabu{
+        width:0px;
+        margin-top: 10px;
+        border-bottom:30px solid #cfc6c6;
+        border-left:330px solid transparent;
+        border-right: 0px solid transparent;
+        position: relative;
+        display: block;
+    }
+    #segitiga1 {
+        width:0px;
+        height:10px;
+        margin-top: -16px;
+        border-bottom:10px solid #CD2122;
+        border-right:360px solid transparent;
+        position: relative;
+        display: block;
+        z-index: 20;
+    }
+    #segitiga2 {
+        width:0px; 
+        height:10px;
+        border-top: 23px solid #CD2122;
+        border-left:25px solid transparent;
+        border-right:3px solid transparent;
+        margin-left: 120px;
+    }
+    .ipj{
+        color: white;
+        margin-top: 20px;
+        font-size: 1.9em;
+        text-align: center;
+        font-weight: 700;
+        line-height: 33px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .ipt{
+        margin-top: -20px;
+        font-size: 1.1em;
+        text-align: center;
+        color: rgb(235,166,158);
+    }
+    .btn-visi {
+        margin-top: 50px;
+        border: 2px solid white;
+        background-color: rgb(248, 232, 232);
+        color: black;
+        font-weight: 500;
+        margin-bottom: 0px;
+        text-align: center;
+        font-size: 1em;
+        margin-left: 17%;
+
+    }
+    .btn-visi:hover{
+        background-color: white;
+        color: black;
+        font-weight: 500;
+    }
+/* akhir info panel */
+/* ======================= */
+/* cabang olahraga */
+
+.judulcabang {
+    font-size: 44px;
+    font-weight: bold;
+}
+.bawahjudulcabang{
+    font-size: 18px;
+    font-weight: 400;
+}
+.jcabor{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    text-decoration: none solid rgb(50, 50, 50);
+    text-align: center;
+    word-spacing: 0px;
+    height: 30px;
+    width: 232px;
+}
+.dcabor{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    text-decoration: none solid rgb(10, 10, 10);
+    text-align: center;
+    height: 48px;
+    width: 232px;
+    display: block;
+    transform: none;
+    
+}
+.details {
+    height: 40px;
+    width: 92px;
+    font-size: 13px;
+    background-color: #CD2122;
+    font-weight: 700;
+    line-height: 20px;
+}
+.details:hover{
+    background-color: #ad0a0a;
+}
+
+/* akhir cabang olahraga */
+/* --------------------------- */
+/* berita terbaru KONI SUMUT */
+
+.bgberita{
+    height: 3660px;
+    padding: 35px 0 35px 0;
+    background-color: rgb(245, 243, 243);
+    position: relative;
+}
+.news{
+    width: 100%;
+    height: 2056px;
+    margin-left: 0.5em;
+}
+.row{
+    display: flex;
+}
+.rowberita{
+    background-color: white;
+    width: 23em;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    padding: 30px -300px 0px 30px;
+    justify-content: center;
+    align-items: center;
+}
+.media{
+    height: 260px;
+}
+.judulberita{
+    font-size: 18px;
+    color: #CD2122;
+    width: 230px;
+    padding-top: 30px;
+}
+.beritaaja{
+    margin-left: 0px;
+}
+.tglberita{
+    background-color: #CD2122;
+    width: 73px;
+    height: 28px;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 7px;
+    margin: 0 0 5px 0;
+    color: white;
+    margin-left: 0px;
+}
+.inberita{
+    font-size: 9px;
+    margin-left: 10px;
+}
+.jb{
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 30px;
+    width: 230px;
+}
+.jb:hover {
+    color: #CD2122;
+}
+.paragraf{
+    font-size: 13px;
+    width: 230px;
+    line-height: 22px;
+    text-decoration: none solid rgb(10, 10, 10);
+    margin-left: 30px;
+}
+.jbg{
+    font-size: 16px;
+    font-weight: 700;
+    width: 250px;
+}
+.jbg:hover{
+    color: #CD2122;
+}
+.paragrafg{
+    font-size: 13px;
+    width: 250px;
+    line-height: 21px;
+}
+.medgam{
+    height: 370px;
+}
+.tmg{
+    margin-top: 160px;
+    margin-left: -11em;
+}
+.mr-3{
+    margin-left: 30px;
+}
+
+/* akhir berita terbaru KONI SUMUT */
+/*---------------------------------- */
+/*--------- FOOTER---------------- */
+.footer {
+    background-color: #2F2F2F;
+    width: 100%;
+    height: 480px;
+    color: white;
+    padding-top: 50px;
+    margin-top: 10px;
+    margin-bottom: -115px;
+}
+.garisfoot{
+    height: 5px;
+    background-color: #484848;
+}
+.FJ{
+    font-size: 14px;
+    margin-bottom: 17px;
+}
+.FP{
+    padding-right: 140px;
+    text-decoration: non solid rgb(2555, 255, 255);
+    background-color: #2F2F2F;
+    font-size: 13px;
+    font-weight: 400;
+}
+.FVM{
+    padding-right: 90px;
+    background-color: #2F2F2F;
+    font-weight: 400;
+    font-size: 13px;
+}
+.FPK{
+    padding-right: 110px;
+    font-weight: 400;
+    font-size: 13px;
+    background-color: #2F2F2F;
+}
+.FB{
+    font-size: 13px;
+    font-weight: 400;
+    padding-right: 120px;
+    background-color: #2F2F2F;
+}
+.FPON{
+    font-weight: 400;
+    font-size: 13px;
+    padding-right: 90px;
+    background-color: #2F2F2F;
+}
+.FHK{
+    font-size: 14px;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 17px;
+}
+.FC{
+    font-weight: 400;
+    font-size: 13px;
+    background-color: #2F2F2F;
+    margin-bottom: 17px;
+}
+.FA{
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+.FM{
+    font-weight: 400;
+    margin-bottom: 17px;
+    font-size: 13px;
+    padding-right: 90px;
+    background-color: #2F2F2F;
+}
+.bawahkali{
+    color: #9b9797;
+    font-weight: 400;
+    font-size: 13px;
+}
+/* akhir footer */
+/* ================ */
+/* sejarah.html */
+.bgs{
+    background-color: rgb(248, 247, 247);
+}
+.sejarahkoni{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+.bgsejarah {
+    width: 100%;
+    height: 147px;
+    padding: 35px 0 35px 0;
+    position: relative;
+    display: block;
+    margin-top: 48px;
+}
+.sejarahspan{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 35px;
+    color: white;
+    background-color: #CD2122;
+    position: relative;
+    padding: 10px 5px 10px 20px;
+    margin-left: -15px;
+    width: 140px;
+    height: 45px;
+}
+.sejarahspan:hover{
+    background-color: #CD2122;
+    padding-left: 30px;
+}
+.sejarahkoni{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 45px;
+    color: #CD2122;
+    width: 130x;
+    height: 42px;
+    margin: 0 0 35px 0;
+    display: block;
+    margin-left: 125px;
+    margin-top: -45px;
+}
+.dot{
+    border: none;
+    border-top: 1px dotted black;
+    margin-top: -5px;
+    width: 160px;
+    margin-left: 0px;
+}
+.tombolberandasejarah,.tombolkonisejarah{
+    color: black;
+}
+
+/* akhir sejarah.html */
+/* ================ */
+/* pon2024.html */
+.bgp{
+    background-color: rgb(248, 247, 247);
+    overflow-x: hidden;
+}
+.bgpon{
+    width: 100%;
+    height: 247px;
+    padding: 105px 0 35px 0;
+    justify-content: left;
+    margin-top: 4px;
+}
+.ponH3{
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+    text-decoration: none solid rgb(10, 10, 10);
+    font-weight: 400;
+    height: 42px;
+    display: block;
+}
+.ponH4{
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    text-decoration: none solid rgb(10, 10, 10);
+}
+.tombolpon2024{
+    background-color: #CD2122;
+    color: white;
+}
+.tombolberandapon {
+    padding: 4px 12px 4px 12px ;
+    border: white;
+    background-color: white;
+    color: black;
+}
+.tombolberandapon,.tombolpon2024{
+    color: black;
+}
+
+/* akhir pon2024.html */
+/* ================ */
+/* visimisi.html */
+.bgv{
+    background-color: rgb(248, 247, 247);
+}
+.bgvisi{
+    width: 100%;
+    height: 450px;
+    padding: 35px 0 35px 0;
+    position: relative;
+    display: block;
+    margin-top: 4px;
+}
+.visispan{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 45px;
+    color: white;
+    background-color: #CD2122;
+    position: relative;
+    padding: 15px 10px 15px 25px;
+    margin-top: 100px;
+    width: 100%;
+    height: 45px;
+}
+.visispan:hover{
+    background-color: #CD2122;
+    padding-left: 30px;
+}
+.visikoni{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 45px;
+    color: #CD2122;
+    width: 150px;
+    height: 42px;
+    margin: 0 0 35px 0;
+    display: block;
+    margin-left: 165px;
+    margin-top: -50px;
+}
+.isivisi{
+    margin-top: -300px;
+}
+.visiH2{
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    text-decoration: none solid rgb(10, 10, 10);
+}
+.visiH3{
+    text-align: center;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 22px;
+    text-decoration: none solid rgb(10, 10, 10);
+    word-spacing: 0px;
+}
+.visiH4{
+    text-align: center;
+    font-size: 14.5px;
+    line-height: 22px;
+    text-decoration: none solid rgb(10, 10, 10);
+    display: block;
+    height: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    display: block;
+}
+.tombolkonivisimisi{
+    background-color: #CD2122;
+    color: white;
+}
+.tombolberandavisimisi{
+    padding: 4px 12px 4px 12px ;
+    border: white;
+    background-color: white;
+    color: black;
+}
+.tombolberandavisimisi,.tombolkonivisimisi{
+    color: black;
+}
+
+/* akhir visimisi.html */
+/* ================ */
+/* olahragapermainan.html */
+.baris{ 
+    font-size: 13px;
+}
+.kolom {
+    font-size: 13px;
+    background-color: #d9edf7;;
+}
+div{
+    display: block;
+}
+.baris1{
+    background-color: white;
+    font-size: 13px;
+}
+.baris2{
+    background-color: #f7f5f5;
+    font-size: 13px;
+}
+.baris1:hover,.baris2:hover{
+    background-color: #dfdbdb;
+}
+.tombolberandaolahragapermainan,.tombolcabangolahragapermainan{
+    color: black;
+}
+/* akhir olahragapermainan.html */
+/* ======================== */
+}
+/* ----AKHIR VERSI MOBILE-----*/
+
+
+/* ///////////////////////////*/
+
+
+/*------- VERSI DEKSTOP--------*/
+/* @media (min-width: 992px) { */
+    @media (min-width: 576px) {
+    .navbar {
+        height: 100px;
+    }
+
+    /* untuk navbar fixed top */
+    .navbar-nav {
+    position: fixed;
+    z-index: 55;
+    background: white;
+    margin-top: -2.5vw;
+    margin-left: -15px;
+    padding-top: 25px;
+    }
+    
+    
+    /* untuk navbar fixed top */
+    /* .sticky {
+        position: fixed;
+        z-index: 50;
+        background: white;
+        margin-top: -60px;
+        margin-left: -50px;
+    } */
+
+    
+    .tombolberanda{
+        background-color: #cd1212;
+        color: white;
+    }
+    .dropdown:hover>.dropdown-menu{
+        display: block;
+    }
+/* ========================== */
+/* info panel */
+.container{
+    margin-left: auto;
+    margin-right: auto;
+}
+.info-panel {
+    background-color: #CD2122;
+    margin-top: -50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    display: block;
+    z-index: 1;
+    position: relative;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#segitiga1 {
+    width:0px;
+    height:10px;
+    border-bottom:40px solid #CD2122;
+    border-right:950px solid transparent;
+    position: relative;
+    display: block;
+    z-index:5;
+}
+#segitiga2 {
+    width:0px; 
+    height:10px;
+    border-top: 23px solid #CD2122;
+    border-left:25px solid transparent;
+    border-right:3px solid transparent;
+    margin-left: 220px;
+}
+.ipj{
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ipt{
+    margin-left: 20px;
+    margin-top: -20px;
+    font-size: 14px;
+    color: rgb(235,166,158);
+}
+.btn-visi {
+    margin-left: 230px;
+    margin-top: 50px;
+    border: 2px solid white;
+    background-color: rgb(248, 232, 232);
+    color: black;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 0px;
+    vertical-align: middle;
+    text-align: center;
+}
+.btn-visi:hover{
+    background-color: white;
+    color: black;
+    font-weight: 500;
+}
+/* akhir info panel */
+/* ========================== */
+/* cabang olahraga */
+
+.judulcabang {
+    font-size: 44px;
+    font-weight: bold;
+}
+.bawahjudulcabang{
+    font-size: 18px;
+    font-weight: 400;
+}
+.jcabor{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    text-decoration: none solid rgb(50, 50, 50);
+    text-align: center;
+    word-spacing: 0px;
+    height: 30px;
+    width: 232px;
+}
+.dcabor{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    text-decoration: none solid rgb(10, 10, 10);
+    text-align: center;
+    height: 48px;
+    width: 232px;
+    display: block;
+    transform: none;
+    
+}
+.details {
+    height: 40px;
+    width: 92px;
+    font-size: 13px;
+    background-color: #CD2122;
+    font-weight: 700;
+    line-height: 20px;
+}
+.details:hover{
+    background-color: #ad0a0a;
+}
+/* ----akhir cabang olahraga---- */
+/* ========================= */
+/* berita terbaru KONI SUMUT */
+.bgberita{
+    height: 2166px;
+    padding: 35px 0 35px 0;
+    background-color: rgb(245, 243, 243);
+    position: relative;
+}
+.news{
+    width: 750px;
+    height: 1956px;
+    margin-left: 7em;
+}
+.row{
+    display: flex;
+}
+.rowberita{
+    background-color: white;
+    width: 750px;
+    padding: 30px -300px 0px 30px;
+}
+.judulberita{
+    font-size: 18px;
+    color: #CD2122;
+    width: 690px;
+    padding-top: 30px;
+}
+.beritaaja{
+    margin-left: 0px;
+}
+.tglberita{
+    background-color: #CD2122;
+    width: 73px;
+    height: 28px;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 7px;
+    margin: 0 0 5px 0;
+    color: white;
+    margin-left: 0px;
+}
+.inberita{
+    font-size: 9px;
+    margin-left: 10px;
+}
+.jb{
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 30px;
+    width: 53   0px;
+}
+.jb:hover {
+    color: #CD2122;
+}
+.paragraf{
+    font-size: 13px;
+    height: 110px;
+    width: 530px;
+    line-height: 22px;
+    text-decoration: none solid rgb(10, 10, 10);
+    margin-left: 30px;
+}
+.jbg{
+    font-size: 14px;
+    font-weight: 700;
+    width: 400px;
+}
+.jbg:hover{
+    color: #CD2122;
+}
+.paragrafg{
+    font-size: 13px;
+    height: 132px;
+    width: 400px;
+    line-height: 22px;
+}
+.mr-3{
+    margin-left: 30px;
+}
+
+/* akhir berita terbaru KONI SUMUT */
+/* =============================== */
+/*----------- FOOTER-------------- */
+
+.footer {
+    background-color: #2F2F2F;
+    width: 100%;
+    height: 371px;
+    color: white;
+    padding-top: 60px;
+    margin-top: 10px;
+    margin-bottom: -115px;
+}
+.colhub{
+    margin-left: 380px;
+}
+.garisfoot{
+    height: 5px;
+    background-color: #484848;
+}
+.FJ{
+    font-size: 14px;
+    margin-left: 5px;
+    margin-bottom: 17px;
+}
+.FP{
+    padding-right: 140px;
+    text-decoration: non solid rgb(2555, 255, 255);
+    background-color: #2F2F2F;
+    font-size: 13px;
+    font-weight: 400;
+}
+.FVM{
+    padding-right: 90px;
+    background-color: #2F2F2F;
+    font-weight: 400;
+    font-size: 13px;
+}
+.FPK{
+    padding-right: 110px;
+    font-weight: 400;
+    font-size: 13px;
+    background-color: #2F2F2F;
+}
+.FB{
+    font-size: 13px;
+    font-weight: 400;
+    padding-right: 120px;
+    background-color: #2F2F2F;
+}
+.FPON{
+    font-weight: 400;
+    font-size: 13px;
+    padding-right: 130px;
+    background-color: #2F2F2F;
+}
+.FHK{
+    font-size: 14px;
+    margin-bottom: 17px;
+}
+.FC{
+    font-weight: 400;
+    font-size: 13px;
+    background-color: #2F2F2F;
+    margin-bottom: 17px;
+}
+.FA{
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+.FM{
+    font-weight: 400;
+    margin-bottom: 17px;
+    margin-left: -0.8em;
+    font-size: 13px;
+    padding-right: 90px;
+    background-color: #2F2F2F;
+}
+.bawahkali{
+    color: #9b9797;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+/* ------akhir footer----- */
+/* ======================== */
+/* SEJARAH.HTML */
+.navbar{
+    background-color: white;
+}
+.bgs{
+    background-color: rgb(248, 247, 247);
+}
+.sejarahkoni{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+.bgsejarah {
+    width: 100%;
+    height: 147px;
+    padding: 35px 0 35px 0;
+    position: relative;
+    display: block;
+    margin-top: 48px;
+}
+.sejarahspan{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 45px;
+    color: white;
+    background-color: #CD2122;
+    position: relative;
+    padding: 15px 10px 15px 25px;
+    margin-top: -300px;
+    width: 151px;
+    height: 45px;
+}
+.sejarahspan:hover{
+    background-color: #CD2122;
+    padding-left: 30px;
+}
+.sejarahkoni{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 45px;
+    color: #CD2122;
+    width: 993px;
+    height: 42px;
+    margin: 0 0 35px 0;
+    display: block;
+    margin-left: 165px;
+    margin-top: -50px;
+}
+.dot{
+    border: none;
+    border-top: 1px dotted black;
+    margin-top: -5px;
+    width: 950px;
+    margin-left: 0px;
+}
+.tombolkonisejarah{
+    background-color: #CD2122;
+    color: white;
+}
+.tombolberandasejarah {
+    padding: 4px 12px 4px 12px ;
+    border: white;
+    background-color: white;
+    color: black;
+}
+/* akhir sejarah.html */
+/* ============================== */
+/*==================== */
+/* pon.html */
+.bgp{
+    background-color: rgb(248, 247, 247);
+}
+.bgpon{
+    width: 1349px;
+    height: 147px;
+    padding: 35px 0 35px 0;
+    position: relative;
+    display: block;
+    margin-top: 4px;
+}
+.ponH3{
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    text-decoration: none solid rgb(10, 10, 10);
+    font-weight: 400;
+    height: 42px;
+    display: block;
+}
+.ponH4{
+    text-align: center;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    text-decoration: none solid rgb(10, 10, 10);
+}
+.tombolpon2024{
+    background-color: #CD2122;
+    color: white;
+}  
+.tombolberandapon {
+    padding: 4px 12px 4px 12px ;
+    border: white;
+    background-color: white;
+    color: black;
+}
+
+/* akhir pon.html */
+/* ==================== */
+/* visimisi.html */
+.bgv{
+    background-color: rgb(248, 247, 247);
+}
+.bgvisi{
+    width: 1349px;
+    height: 147px;
+    padding: 35px 0 35px 0;
+    position: relative;
+    display: block;
+    margin-top: 4px;
+}
+.visispan{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 45px;
+    color: white;
+    background-color: #CD2122;
+    position: relative;
+    padding: 15px 10px 15px 25px;
+    margin-top: -400px;
+    width: 151px;
+    height: 45px;
+}
+.visispan:hover{
+    background-color: #CD2122;
+    padding-left: 30px;
+}
+.visikoni{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 45px;
+    color: #CD2122;
+    width: 993px;
+    height: 42px;
+    margin: 0 0 35px 0;
+    display: block;
+    margin-left: 165px;
+    margin-top: -50px;
+}
+.visiH2{
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    text-decoration: none solid rgb(10, 10, 10);
+}
+.visiH3{
+    text-align: center;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 22px;
+    text-decoration: none solid rgb(10, 10, 10);
+    word-spacing: 0px;
+    
+}
+.visiH4{
+    text-align: center;
+    font-size: 17.5px;
+    line-height: 22px;
+    text-decoration: none solid rgb(10, 10, 10);
+    display: block;
+    height: 22px;
+    width: 1224px;
+    margin: 25px 40px 17px -45px;
+    padding: 10px 20px 10px 20px;
+    display: block;
+}
+.tombolkonivisimisi{
+    background-color: #CD2122;
+    color: white;
+}
+.tombolberandavisimisi{
+    padding: 4px 12px 4px 12px ;
+    border: white;
+    background-color: white;
+    color: black;
+}
+
+/* akhir visimisi.html */
+/* ===================== */
+/* olahragapermainan.html */
+.baris{ 
+    font-size: 13px;
+}
+.kolom {
+    font-size: 13px;
+    background-color: #d9edf7;;
+}
+div{
+    display: block;
+}
+.baris1{
+    background-color: white;
+    font-size: 13px;
+}
+.baris2{
+    background-color: #f7f5f5;
+    font-size: 13px;
+}
+.baris1:hover,.baris2:hover{
+    background-color: #dfdbdb;
+}
+.tombolcabangolahragapermainan{
+    background-color: #CD2122;
+    color: white;
+}
+.tombolberandaolahragapermainan{
+    padding: 4px 12px 4px 12px ;
+    border: white;
+    background-color: white;
+    color: black;
+}
+
+/* akhir  olahragapermainan.html */
+/* ============================= */
+
+}
+/*-----akhir versi dekstop-----*/
