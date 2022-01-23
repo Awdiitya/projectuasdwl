@@ -4,7 +4,6 @@
 }
 
 /* preloader */
-
 .sectionload{
     position: absolute;
     top: 0;
@@ -92,12 +91,13 @@
 @media (max-width: 575.98px) {
 
     body{
+        max-width: 100%;
         overflow-x: hidden;
     }
 
     .loader img{
         top: 0;
-        margin-top: 50%;
+        margin-top: 30%;
     }
 /* ====================*/
 /* Tombol Back To Top */
@@ -128,9 +128,8 @@
     }
 
     /* info panel */
-    .container{
+    .bagpanel{
         margin-left: auto;
-        margin-right: auto;
     }
     .info-panel {
         background-color: #CD2122;
@@ -149,7 +148,7 @@
         width:0px;
         margin-top: 10px;
         border-bottom:30px solid #cfc6c6;
-        border-left:300px solid transparent;
+        border-left:320px solid transparent;
         border-right: 0px solid transparent;
         position: relative;
         display: block;
@@ -210,7 +209,6 @@
 .menu-olahraga{
     width: 100%;
 }
-
 .judulcabang {
     font-size: 44px;
     font-weight: bold;
@@ -239,7 +237,6 @@
     width: 232px;
     display: block;
     transform: none;
-    
 }
 .details {
     height: 40px;
@@ -259,23 +256,21 @@
 
 .bgberita{
     height: 3660px;
+    width: 100%;
     padding: 35px 0 35px 0;
     background-color: rgb(245, 243, 243);
     position: relative;
 }
 .news{
-    width: 100%;
     height: 2056px;
     margin-left: 0.5em;
 }
-.row{
-    display: flex;
-}
+
 .rowberita{
     background-color: white;
-    width: 23em;
-    margin-left: 2px;
+    margin-left: -2px;
     margin-bottom: 2px;
+    margin-right: 10em;
     padding: 30px -300px 0px 30px;
     justify-content: center;
     align-items: center;
