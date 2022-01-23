@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-/* preloader */
+/* PRELOADER */
 .sectionload{
     position: absolute;
     top: 0;
@@ -59,7 +59,7 @@
     position: absolute;
     width: 100%;
 }
-/* akhir preloader */
+/* AKHIR PRELOADER */
 
 .tombolberanda,.tombolkoni,.tombolanggota,.tombolberita,.tombolevent,.tombolgallery,.tombolcabangolahraga,
 .tombolkegiatan,.tombolpon,.tombolporprovsu{
