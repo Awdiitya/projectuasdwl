@@ -115,10 +115,6 @@
     cursor: pointer;
 }
 /* akhir tombol Back to Top */
-
-    body{
-        overflow-x: hidden;
-    }
     .navbar{
         background-color: rgb(209, 204, 209);
     }
@@ -260,6 +256,8 @@
     padding: 35px 0 35px 0;
     background-color: rgb(245, 243, 243);
     position: relative;
+    margin-right: 2em;
+    
 }
 .news{
     height: 2056px;
@@ -268,9 +266,9 @@
 
 .rowberita{
     background-color: white;
-    margin-left: -2px;
     margin-bottom: 2px;
-    margin-right: 10em;
+    margin-left: 0.09em;
+    margin-right: 1em;
     padding: 30px -300px 0px 30px;
     justify-content: center;
     align-items: center;
